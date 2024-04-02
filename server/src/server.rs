@@ -18,7 +18,7 @@ impl Server {
 	    let mut stream = stream.unwrap();
 
 
-	    let mut buffer = [0;800];
+	    let mut buffer = [0;8000];
 	    stream.read(&mut buffer).unwrap();
 	    let mut buffer_vec = buffer.to_vec();
 	    buffer_vec.retain(|&x| x != 0);
