@@ -3,12 +3,6 @@
 version = 3
 
 [[package]]
-name = "algori"
-version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8cc65f99327dc363ef52a7d40103a68d6318b4cc8378ea61a446dff2fa99113b"
-
-[[package]]
 name = "http"
 version = "0.1.0"
 
@@ -16,6 +10,5 @@ version = "0.1.0"
 name = "server"
 version = "0.1.0"
 dependencies = [
- "algori",
  "http",
 ]
