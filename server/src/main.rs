@@ -8,8 +8,9 @@ use std::collections::HashMap;
 use std::net::TcpListener;
 use parse::*;
 use server::*;
-fn main(){
+#[tokio::main]
+async fn main(){
     let addr: String = config();
     let server: Server  = Server::new(addr);
-    server.run();
+    server.run().await;
 }
