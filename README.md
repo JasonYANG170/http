@@ -2,9 +2,9 @@
 
 # Http
 
-## 使用
+## Usage
 
-### 将字符串转换为 Request / Response
+### Convert strings into Request / Response
 
 ```rust
 use http::response::*;
