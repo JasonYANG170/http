@@ -1,9 +1,12 @@
-[[README_zh.md][简体中文]] | [[README.org][English]]
+[简体中文](README_zh.md) | [English](README.org)
 
-* Http
-** Use
-*** String into Request/Response
-#+begin_src
+# Http
+
+## 使用
+
+### 将字符串转换为 Request / Response
+
+```rust
 use http::response::*;
 use http::request::*;
 let listener = TcpListener::bind(&self.addr).unwrap();
@@ -17,4 +20,4 @@ for stream in listener.incoming() {
 	    let request: Request = String::from_utf8(buffer_vec).unwrap().into();
 	    println!("[Connection] {} {:?}",stream.peer_addr().unwrap(),request);
 	    stream.write(&mut buffer);
-#+end_src
+```
